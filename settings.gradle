@@ -1,0 +1,4 @@
+rootProject.name = "androidDome"
+include ':app'
+include ':lib'
+include ':mylibrary'

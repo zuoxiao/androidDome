@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.androiddome">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true">
+<!--        <activity android:name=".pager.MainActivity">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+<!--        </activity>-->
+        <!--        <activity-->
+        <!--            android:name=".TestHandlerThread"-->
+        <!--            android:exported="true"-->
+        <!--            android:permission="com.example.androiddome">-->
+
+        <!--        </activity>-->
+        <activity android:name=".service.ServiceActivity">
+            <!--            <intent-filter>-->
+            <!--                <action android:name="android.intent.action.MAIN" />-->
+
+            <!--                <category android:name="android.intent.category.LAUNCHER" />-->
+            <!--            </intent-filter>-->
+        </activity>
+        <!--        <activity android:name=".TestHandler">-->
+        <!--            <intent-filter>-->
+        <!--                <action android:name="android.intent.action.MAIN" />-->
+
+        <!--                <category android:name="android.intent.category.LAUNCHER" />-->
+        <!--            </intent-filter>-->
+
+        <!--        </activity>-->
+        <service android:name=".service.StartService"></service>
+
+        <activity android:name=".activity.A_Activity">
+
+        </activity>
+        <activity
+            android:name=".fragment.Activity_Fragment"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+
+        <activity android:name=".activity.B_Activity"></activity>
+
+        <!--测试使用动态代理替换没有注册的Activity-->
+        <activity
+            android:name=".hook.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".hook.ProxyActivity" />
+    </application>
+
+</manifest>
