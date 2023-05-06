@@ -17,7 +17,7 @@ public class StarDecoration extends RecyclerView.ItemDecoration {
         super.onDrawOver(c, parent, state);
         if (parent.getAdapter() instanceof StarAdapter) {
             StarAdapter adapter = (StarAdapter) parent.getAdapter();
-            adapter.isGourpHeader(parent.getpo)
+//            adapter.isGourpHeader(parent.getpo);
         }
     }
 
